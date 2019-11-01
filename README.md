@@ -22,7 +22,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. `npm i -g firebase-tools @angular/cli@next`
 
-2. `fork this project`  
+2. click `Use this template` here in github and select your project name  
 (if you use clone you have to do additional work, and you don´t want that)
 
 3. `rename your new repo`
