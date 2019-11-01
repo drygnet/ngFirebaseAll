@@ -25,8 +25,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. click `Use this template` here in github and select your project name  
 (if you use clone you have to do additional work, and you don´t want that)
 
-3. `rename your new repo`
-
 4. `git clone {your-new-repo}`
 
 5. `cd {your new repo}`
