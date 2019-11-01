@@ -41,6 +41,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 10. scroll down and add your domain to `Authorized domains`  
 (you can go back and do this later too)
 
+10. click `database` and create a `Cloud firestore` database in prod mode
+
 10. (back to your terminal)  
 run `firebase use --add` and select your firebase project
 
