@@ -1,27 +1,53 @@
-# client
+# Angular-Firebase template
+
+Make a new project with angular and firebase in minutes.
+
+Kitchen sink version, including:  
+  * auth
+  * firestore
+  * realtime database
+  * firebase storage
+
+Basic angular components for:
+  * login
+  * profile page
+  * user files
+
+Firebase functions examples for:  
+  * read with admin user
+  * public "Hello world"
+  * "Hello world" with logged in user
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-next.19.
 
-## Development server
+1. `npm i -g firebase-tools @angular/cli@next`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. `fork this project`  
+(if you use clone you have to do additional work, and you don´t want that)
 
-## Code scaffolding
+3. `rename your new repo`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4. `git clone {your-new-repo}`
 
-## Build
+5. `cd {your new repo}`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+6. `npm install`
 
-## Running unit tests
+7. (while install is running)  
+ `set up a new` [Firebase](https://firebase.com) `project`  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+8. click `storage` in [Firebase console](https://firebase.com) then click `Get started` and select your preferred storage region
 
-## Running end-to-end tests
+9. click `Authentication` in [Firebase console](https://firebase.com) and enable Google under `Sign-in method`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+10. scroll down and add your domain to `Authorized domains`  
+(you can go back and do this later too)
 
-## Further help
+10. (back to your terminal)  
+run `firebase use --add` and select your firebase project
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+11. ng build --prod
+
+12. firebase deploy
+
+Your app is live!
