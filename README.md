@@ -22,7 +22,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. install global dependencies `npm i -g firebase-tools @angular/cli@next`
 
-2. click `Use this template` here in github and select your project name  
+2. click `Use this template` here on github and select your project name  
 (if you use clone you have to do additional work, and you don´t want that)
 
 4. `git clone {your-new-repo}`
