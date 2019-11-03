@@ -14,9 +14,8 @@ Basic angular components for:
   * user files
 
 Firebase functions examples for:  
-  * read with admin user
+  * read/write db with admin user
   * public "Hello world"
-  * "Hello world" with logged in user
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-next.19.
 
