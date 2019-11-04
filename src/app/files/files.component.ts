@@ -40,9 +40,8 @@ export class FilesComponent implements OnInit {
       finalize(() => {
         fileRef.getDownloadURL().subscribe(downloadURL => {
           console.log('File available at', downloadURL);
-          file.DownloadUrl = downloadURL;
-          file.name = file.name;
-          file.size = file.size;
+          file.downloadUrl = downloadURL;
+          // Saves file metadata to the realtime database (so we can find it), angularFire has no method for listing Storage items.
           this.saveFileData(file);
         });
       })
@@ -50,7 +49,16 @@ export class FilesComponent implements OnInit {
       .subscribe();
   }
 
-  private saveFileData(fileData) {
+  private saveFileData(file) {
+    // The File-oject is "special", so we make a new object to write to the realtime Datamase
+    const fileData = {
+      downloadUrl: file.downloadUrl,
+      lastModified: file.lastModified,
+      name: file.name,
+      size: file.size,
+      type: file.type
+
+    };
     this.db.list(this.basePath).push(fileData);
   }
 
