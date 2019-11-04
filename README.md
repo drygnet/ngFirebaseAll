@@ -19,7 +19,7 @@ Firebase functions examples for:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-next.19.
 
-0. install global dependencies `npm i -g firebase-tools @angular/cli@next`
+1. install global dependencies `npm i -g firebase-tools @angular/cli@next`
 
 0. click `Use this template` here on github and select your project name  
 (if you use clone you have to do additional work, and you don´t want that)
@@ -51,6 +51,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 0. (back to your terminal)  
 run `firebase use --add` and select your firebase project
+
+0. ng serve -o (to run local development evironment)
 
 0. ng build --prod
 

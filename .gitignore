@@ -48,3 +48,4 @@ Thumbs.db
 /.firebase
 functions/firebase-debug.log
 src/environments/firebase-local.ts
+src/environments/firebase.ts
