@@ -4,3 +4,8 @@
 <a [href]="downloadURL | async">{{ downloadURL | async }}</a>
 
 <h2>Your files</h2>
+<ul>
+<li *ngFor="let file of fileList | async">
+  <a href="{{file.downloadUrl}}" target="_blank">{{file.name}}</a><button (click)="deleteFile(file)">X Delete</button>
+</li>
+</ul>
