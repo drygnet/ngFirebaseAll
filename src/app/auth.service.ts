@@ -32,6 +32,11 @@ export class AuthService {
     );
   }
 
+  async facebookSignin() {
+    const provider = new auth.FacebookAuthProvider();
+    const credential = await this.afAuth.auth.signInWithPopup(provider);
+    return this.updateUserData(credential.user);
+  }
 
   async googleSignin() {
     const provider = new auth.GoogleAuthProvider();
